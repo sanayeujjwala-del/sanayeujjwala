@@ -106,6 +106,14 @@
     <!-- HERO -->
     <header>
         <h1>👋 Hi, I’m Ujjwala Sanaye</h1>
+        <img src="profile.jpg" alt="Ujjwala Sanaye"
+     style="
+     width:180px;
+     height:180px;
+     border-radius:50%;
+     margin-top:20px;
+     border:4px solid white;
+     ">
         <p>Motivated student with a passion for growth and learning</p>
     </header>
 
