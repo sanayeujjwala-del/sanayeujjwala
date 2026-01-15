@@ -21,15 +21,15 @@
         header {
             text-align: center;
             padding: 80px 20px;
-            background: linear-gradient(135deg, #2575fc, #6a11cb);
-            color: #fff;
+            background: linear-gradient(135deg, #ff9a9e, #6fadOc4);
+            color: #4aOO33;
         }
         header h1 { font-size: 42px; margin-bottom: 10px; }
         header p { font-size: 18px; opacity: 0.85; }
 
         /* ---- HEADINGS ---- */
         section h2 {
-            color: #61dafb;
+            color: #d63384;
             font-size: 28px;
             margin-bottom: 15px;
             border-bottom: 2px solid rgba(97, 218, 251, 0.25);
@@ -79,7 +79,7 @@
         .contact-container button {
             margin-top: 15px;
             padding: 12px 24px;
-            background: #2575fc;
+            background: #ff6f91;
             border: none;
             border-radius: 6px;
             color: white;
@@ -88,7 +88,7 @@
             transition: 0.3s ease;
         }
         .contact-container button:hover {
-            background: #1a5fc8;
+            background: #ff4f79;
         }
 
         footer {
