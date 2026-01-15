@@ -11,7 +11,7 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: "Segoe UI", Arial, sans-serif;
-            background: #fffOf5;/*light pink background*/
+            background: #fffOf5;
             color: #333;
             line-height: 1.6;
         }
