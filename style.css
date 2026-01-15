@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f9f6fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #f6c1e1, #d6b3f9);
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 2.2rem;
+}
+
+header p {
+    font-size: 1.1rem;
+}
+
+/* Intro */
+.intro {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.intro img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #d6b3f9;
+    margin-bottom: 15px;
+}
+
+.intro p {
+    max-width: 700px;
+    margin: auto;
+}
+
+/* Cards */
+.card {
+    background: #fff;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+    color: #9b5de5;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin-top: 10px;
+    color: #555;
+}
+
+.card ul {
+    margin-left: 20px;
+}
+
+.card li {
+    margin-bottom: 6px;
+}
+
+/* Contact */
+.contact a {
+    color: #9b5de5;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #eee;
+    margin-top: 30px;
+}
