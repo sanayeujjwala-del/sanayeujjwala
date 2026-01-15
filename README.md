@@ -1,5 +1,6 @@
 # ABOUT ME 
 <WELCOME>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,111 +8,129 @@
     <title>Ujjwala Sanaye | Personal Website</title>
 
     <style>
+        /* ---- GLOBAL ---- */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f4f6f8;
-            color: #333;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #0d0d0d;
+            color: #eee;
             line-height: 1.6;
         }
+        section { padding: 40px 20px; max-width: 1000px; margin: auto; }
 
+        /* ---- HEADER / HERO ---- */
         header {
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
-            color: white;
             text-align: center;
-            padding: 50px 20px;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #2575fc, #6a11cb);
+            color: #fff;
         }
+        header h1 { font-size: 42px; margin-bottom: 10px; }
+        header p { font-size: 18px; opacity: 0.85; }
 
-        header h1 {
-            margin: 0;
-            font-size: 36px;
-        }
-
-        header p {
-            font-size: 18px;
-            margin-top: 10px;
-        }
-
-        section {
-            max-width: 900px;
-            margin: 30px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-
+        /* ---- HEADINGS ---- */
         section h2 {
-            color: #2575fc;
-            border-bottom: 2px solid #eee;
+            color: #61dafb;
+            font-size: 28px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid rgba(97, 218, 251, 0.25);
             padding-bottom: 8px;
         }
 
-        ul {
-            padding-left: 20px;
-        }
+        /* ---- LISTS ---- */
+        ul { list-style-type: none; }
+        li { margin-bottom: 8px; }
 
-        ul li {
-            margin-bottom: 8px;
-        }
-
+        /* ---- SKILLS BOXES ---- */
         .skills {
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
         }
-
         .box {
-            flex: 1;
-            min-width: 250px;
-            background: #f9f9f9;
-            padding: 15px;
+            background: #161616;
+            border: 1px solid #333;
+            padding: 18px;
             border-radius: 8px;
+        }
+        .box h3 { margin-bottom: 10px; color: #61dafb; }
+
+        /* ---- CONTACT FORM ---- */
+        .contact-container {
+            background: #161616;
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid #333;
+        }
+        .contact-container label {
+            display: block;
+            margin: 12px 0 6px;
+            font-size: 16px;
+        }
+        .contact-container input,
+        .contact-container textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #444;
+            border-radius: 6px;
+            background: #0d0d0d;
+            color: #fff;
+            font-size: 15px;
+        }
+        .contact-container button {
+            margin-top: 15px;
+            padding: 12px 24px;
+            background: #2575fc;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s ease;
+        }
+        .contact-container button:hover {
+            background: #1a5fc8;
         }
 
         footer {
             text-align: center;
-            padding: 20px;
-            background: #222;
-            color: white;
-            margin-top: 40px;
-        }
-
-        footer a {
-            color: #4da3ff;
-            text-decoration: none;
+            padding: 15px;
+            background: #111;
+            color: #aaa;
+            font-size: 14px;
         }
     </style>
 </head>
 
 <body>
 
+    <!-- HERO -->
     <header>
         <h1>👋 Hi, I’m Ujjwala Sanaye</h1>
-        <p>Welcome to my personal website</p>
-        <p>I’m a motivated student who enjoys learning new things and growing personally and professionally.</p>
+        <p>Motivated student with a passion for growth and learning</p>
     </header>
 
+    <!-- ABOUT -->
     <section>
         <h2>🙋‍♀ ABOUT ME</h2>
         <p>
-            I am Ujjwala Sanaye, a dedicated and curious individual with a positive attitude toward learning and self-development.
-            I believe in continuous improvement and enjoy taking on new challenges that help me grow.
-            I am interested in building skills that will help me succeed in my future career.
+            I am Ujjwala Sanaye, a dedicated and curious individual focused on
+            continuous learning and personal growth. I enjoy taking on challenges
+            that build skills and prepare me for future opportunities.
         </p>
     </section>
 
+    <!-- EDUCATION -->
     <section>
         <h2>🎓 EDUCATION</h2>
         <ul>
-            <li>Currently pursuing my studies</li>
-            <li>Focused on building strong academic and practical knowledge</li>
-            <li>Actively participating in learning activities and projects</li>
-            <li><strong>College:</strong> Aditya Institute of Management Studies and Research</li>
-            <li><strong>Course:</strong> BMS</li>
+            <li>📚 Currently studying BMS</li>
+            <li>🏫 Aditya Institute of Management Studies and Research</li>
+            <li>🌱 Actively doing projects & learning practical skills</li>
         </ul>
     </section>
 
+    <!-- SKILLS -->
     <section>
         <h2>🛠 SKILLS</h2>
         <div class="skills">
@@ -123,7 +142,6 @@
                     <li>Internet & Email Handling</li>
                 </ul>
             </div>
-
             <div class="box">
                 <h3>Soft Skills</h3>
                 <ul>
@@ -136,34 +154,53 @@
         </div>
     </section>
 
+    <!-- GOALS -->
     <section>
         <h2>🎯 MY GOALS</h2>
         <ul>
-            <li>To gain knowledge and real-world experience</li>
-            <li>To improve my skills continuously</li>
-            <li>To build a successful and meaningful career</li>
+            <li>Gain knowledge & real-world experience</li>
+            <li>Improve skills continuously</li>
+            <li>Build a successful, meaningful career</li>
         </ul>
     </section>
 
+    <!-- HOBBIES -->
     <section>
         <h2>🎨 HOBBIES & INTERESTS</h2>
         <ul>
             <li>Listening to music</li>
             <li>Learning new things</li>
             <li>Exploring creative ideas</li>
-            <li>Spending time on self-improvement</li>
+            <li>Self-improvement</li>
         </ul>
     </section>
 
+    <!-- CONTACT -->
     <section>
         <h2>📩 CONTACT ME</h2>
-        <p><strong>Email:</strong> <a href="mailto:sanayeujjwala@gmail.com">sanayeujjwala@gmail.com</a></p>
-        <p><strong>Location:</strong> Mumbai</p>
+        <div class="contact-container">
+            <form>
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+
+                <label for="message">Message</label>
+                <textarea id="message" rows="4" placeholder="Write your message"></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <p style="margin-top: 15px; font-size: 18px;">
+            Or email me directly at  
+            <a href="mailto:sanayeujjwala@gmail.com" style="color:#61dafb;">
+                sanayeujjwala@gmail.com
+            </a>
+        </p>
     </section>
 
-    <footer>
-        <p>© 2026 Ujjwala Sanaye | Personal Website</p>
-    </footer>
+    <footer>© 2026 Ujjwala Sanaye</footer>
 
 </body>
 </html>
